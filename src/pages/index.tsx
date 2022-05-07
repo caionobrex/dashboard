@@ -33,8 +33,8 @@ ChartJS.register(
 const Home: NextPage = () => {
   return (
     <Layout title="Testing">
-      <div className="flex flex-col gap-y-8">
-        <div className="flex items-center gap-x-8">
+      <div className="flex flex-col gap-y-16 lg:gap-y-8">
+        <div className="flex flex-col gap-y-8 md:flex-row md:items-center gap-x-8">
           <motion.div
             initial={{ opacity: 0, translateY: 40 }}
             whileInView={{ opacity: 1, translateY: 0 }}
@@ -97,12 +97,13 @@ const Home: NextPage = () => {
           </motion.div>
         </div>
 
-        <div className="flex gap-x-8">
+        <div className="flex flex-col gap-y-8 gap-x-8 md:flex-row">
           <motion.div
             initial={{ opacity: 0, translateY: 40 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.5 }}
-            className="rounded-lg py-4 w-[70%] bg-white px-8 dark:bg-[#282C31] dark:border dark:border-[#4D4D4D]">
+            className="w-full rounded-lg py-4 md:w-[70%] bg-white px-8 dark:bg-[#282C31] dark:border dark:border-[#4D4D4D]"
+          >
             <span className="text-2xl font-medium dark:text-gray-50">Audience reach</span>
             <div className="w-full mt-4">
               <Line className="w-full" data={{
@@ -121,7 +122,7 @@ const Home: NextPage = () => {
             initial={{ opacity: 0, translateY: 40 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.5 }}
-            className="rounded-lg px-7 py-4 bg-white w-[30%] dark:bg-[#282C31] dark:border dark:border-[#4D4D4D]">
+            className="w-full rounded-lg px-7 py-4 bg-white md:w-[30%] dark:bg-[#282C31] dark:border dark:border-[#4D4D4D]">
             <span className="text-xl font-medium dark:text-gray-50">Reach by device</span>
             <div className="mt-10 w-full">
               <Pie data={{ labels: ['Test', 'Test 2'], datasets: [
@@ -138,12 +139,12 @@ const Home: NextPage = () => {
           </motion.div>
         </div>
 
-        <div className="flex gap-x-8">
+        <div className="flex flex-col gap-x-8 gap-y-6 md:flex-row">
           <motion.div
             initial={{ opacity: 0, translateY: 40 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.5 }}
-            className="py-6 rounded-lg w-[60%] bg-white px-6 dark:bg-[#282C31] dark:border dark:border-[#4D4D4D]">
+            className="w-full py-6 rounded-lg md:w-[60%] bg-white px-6 dark:bg-[#282C31] dark:border dark:border-[#4D4D4D]">
             <span className="text-2xl font-medium dark:text-gray-50">Gender / Age</span>
           <Bar options={{
   responsive: true,
