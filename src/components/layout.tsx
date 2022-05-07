@@ -113,12 +113,12 @@ export default function Layout({ title, children }: LayoutProps): JSX.Element {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-x-3 hidden md:flex">
-                  <span className="text-lg font-medium dark:text-gray-50">Anya</span>
-                  <div className="w-12 h-12 bg-gray-100 p-2 rounded-full">
-                    <img className="w-full h-full rounded-full" src="https://s3-alpha-sig.figma.com/img/dc49/7145/09b4caab287a2f9b95064622e239aa3f?Expires=1652659200&Signature=KPL35bkURhoLgP-pC4~VTYTm-MOTA6lv4soQLGnyfFgIK7CNn1uYCGQSmWYwCHmkLsodQTtAX1-Jx-SjGCd0RI4HsW2UZU2hDGN5dcfFIxUHb4NAi0Nax2UXLFjEG53dL0B2u6SjP51h4SKYZdoaupW~rKU0PlZGTPZSWPr0lkLPyxiqEZ8cTre6vDlCzao5OGgnLi-XikuiqLazynLcmWSN6-cI5P9UeUgoppxl72izcU0uWTFKr-nYdtU4b0ewBW07h~NmlnR~YaWW3usqfiwKP0FNFntgzqK1BTqX~wj8B1PWDHmqpv4f8dqj8MTjV19FhbRtZ3-YtkvIXKkffQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="" />
+                <a className="flex items-center gap-x-3 hidden md:flex" href="https://www.linkedin.com/in/caio-nobre-b429b5206/">
+                  <span className="text-lg font-medium dark:text-gray-50">Caio Nobre</span>
+                  <div className="w-12 h-12 bg-gray-100 p-1 rounded-full">
+                    <img className="w-full h-full rounded-full object-cover" src="https://portfolio-mauve-delta.vercel.app/_next/image?url=%2Fimages%2Fme.jpg&w=256&q=75" alt="" />
                   </div>
-                </div>
+                </a>
               </div>
             </header>
             <div>
